@@ -15,7 +15,7 @@ const routes = [
     component: About
   },
   {
-    path: '/api/v1/cocktails',
+    path: '/cocktails',
     name: 'Cocktails',
     component: Cocktails
   }
