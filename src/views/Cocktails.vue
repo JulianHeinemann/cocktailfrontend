@@ -1,28 +1,24 @@
 <template>
-     <div class="col" v-for="cocktail in cocktails" :key= "cocktail.id">
-       <div class="card mb-3" style="max-width: 540px;">
-         <div class="row g-0">
-           <div class="col-md-4">
-             <img :alt="cocktail.name" :src="getCocktailPic(cocktail)">
-         </div>
-         <div class="col-md-8" style="alignment-baseline: center">
-           <div class="card-body">
-             <h5 class="card-title">{{cocktail.name}}</h5>
-             <p class="card-text">{{cocktail.zutaten}}</p>
-             <button onclick="window.location.href='https://www.gutekueche.at/cosmopolitan-cocktail-rezept-17940';">Rezept</button>
-           </div>
-         </div>
-       </div>
-     </div>
-     </div>
+  <input class="searchbar" type="text" placeholder="Search" v-model="search">
+  <br>
+  <br>
+  <Cocktailoverview :cocktails="filteredCocktails" :key="cocktails.id" :search="search" ></Cocktailoverview>
+  <Cocktailcreate></Cocktailcreate>
 </template>
 
 <script>
+import Cocktailoverview from '@/components/Cocktailoverview'
+import Cocktailcreate from '@/components/Cocktailcreate'
 export default {
   name: 'cocktails',
+  components: {
+    Cocktailcreate,
+    Cocktailoverview
+  },
   data () {
     return {
-      cocktails: []
+      cocktails: [],
+      search: ''
     }
   },
   methods: {
@@ -50,10 +46,22 @@ export default {
         this.cocktails.push(cocktail)
       }))
       .catch(error => console.log('error', error))
+  },
+  computed: {
+    filteredCocktails () {
+      return this.cocktails.filter(cocktail =>
+        cocktail.name.toLowerCase().includes(this.search.toLowerCase())
+      )
+    }
   }
 }
 </script>
 
 <style scoped>
-
+.searchbar {
+  border-radius: 15px;
+  width: 65%;
+  margin-top: 2%;
+  background: white;
+}
 </style>

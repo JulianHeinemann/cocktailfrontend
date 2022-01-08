@@ -1,7 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">CocktailApp</a>
+      <a class="navbar-brand" href="#">
+      <img src="@/assets/Cocktail2.png" class="card-logo-img" alt="CocktailApp">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,5 +23,17 @@ export default {
 </script>
 
 <style scoped>
-
+.card-logo-img{
+  width: 100%;
+}
+.navbar-brand{
+  color: black;
+  width: 70px;
+}
+.navbar{
+  background: white;
+}
+.nav-link{
+  color: black;
+}
 </style>
