@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Cocktail logo" src="../assets/Cocktail7.jpeg">
+    <img alt="Cocktail logo" src="../assets/Cocktail2.png">
     <HelloWorld msg="Cocktail Anwendung"/>
   </div>
 </template>
@@ -16,7 +16,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

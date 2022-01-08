@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <img alt="Cocktail Logo" src="../assets/Cocktail.png">
+  <div class="about">
+    <h1>This is an about page</h1>
   </div>
 </template>

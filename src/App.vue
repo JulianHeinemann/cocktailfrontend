@@ -1,6 +1,6 @@
 <template>
-  <Navbar>
-  </Navbar>
+  <navbar>
+  </navbar>
   <router-view/>
 </template>
 
@@ -28,10 +28,10 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #7CFC00;
+  color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #7CFC00;
+  color: #42b983;
 }
 </style>
