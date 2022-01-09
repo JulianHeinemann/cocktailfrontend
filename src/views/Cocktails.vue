@@ -25,7 +25,7 @@ export default {
     getCocktailPic (cocktail) {
       switch (cocktail.id) {
         case (1):
-          return require('../assets/GinTonic.png')
+          return require('../assets/gintonic.png')
         case (2):
           return require('../assets/Cocktail2.png')
         default:

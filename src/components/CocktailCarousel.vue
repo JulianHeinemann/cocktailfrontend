@@ -8,20 +8,20 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../assets/GinTonic.png" class="d-block w-50" alt="...">
+        <img src="src/assets/gintonic.png" class="d-block w-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <p>Hier steht etwas</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/GinTonic.png" class="d-block w-50" alt="...">
+        <img src="src/assets/gintonic.png" class="d-block w-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="../assets/GinTonic.png" class="d-block w-50" alt="...">
+        <img src="src/assets/gintonic.png" class="d-block w-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>hier auch</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -51,7 +51,7 @@ export default {
     getCocktailPic (cocktail) {
       switch (cocktail.id) {
         case (1):
-          return require('../assets/GinTonic.png')
+          return require('../assets/gintonic.png')
         case (2):
           return require('../assets/Cocktail2.png')
         default:

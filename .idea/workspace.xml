@@ -4,9 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Cocktailpictures">
+    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Rest der Bilder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Annas Chill me.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/annaschillme.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Black Wiking.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/blackwiking.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Bloody Mary.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/bloodymary.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Blue Moon.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/bluemoon.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Caipirinha.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/caipirinha.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/GinTonic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/gintonic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Green Day.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/greenday.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Hot Berlin Punch.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hotberlinpunch.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Maracuja.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/maracujatraum.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Mexikaner.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/mexikaner.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Mojito.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/mojito.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Polar Crush.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/polarcrush.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Strawberry Vodka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/strawberryvodka.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Tequila Sunrise.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tequilasunrise.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Watermelon Man.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/watermelonman.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Whisky Sour.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/whiskysour.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/blue ocean cocktail mit vodka und limette .jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/blueoceancocktailmitvodkaundlimette.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/cuba libre .jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/cubalibre.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/erdberr daiquiri.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/erdbeerdaiquiri.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/florida cocktail alkoholfrei.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/floridacocktailalkoholfrei.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/long island ice tea.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/longislandicetea.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/mai tai.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/maitai.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pina colada.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/pinacolada.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CocktailCarousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailCarousel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Cocktails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Cocktails.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +81,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -64,6 +90,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Philip\cocktailfrontend\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
@@ -84,7 +113,8 @@
       <workItem from="1641659059558" duration="375000" />
       <workItem from="1641685173988" duration="5595000" />
       <workItem from="1641726544400" duration="7793000" />
-      <workItem from="1641734917602" duration="696000" />
+      <workItem from="1641734917602" duration="6935000" />
+      <workItem from="1641742614774" duration="7881000" />
     </task>
     <task id="LOCAL-00001" summary="Cocktail-Frontend">
       <created>1641658847571</created>
@@ -135,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641734842841</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Rest der Bilder">
+      <created>1641736097004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641736097004</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rest der Bilder">
+      <created>1641736106158</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641736106158</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +202,7 @@
     <MESSAGE value="CocktailRecipeModal hinzufügen" />
     <MESSAGE value="Cocktailoverview overwork" />
     <MESSAGE value="Cocktailpictures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cocktailpictures" />
+    <MESSAGE value="Rest der Bilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest der Bilder" />
   </component>
 </project>

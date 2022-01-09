@@ -2,15 +2,15 @@
   <div class="card-group">
     <div class="col" v-for="cocktail in cocktails" :key= "cocktail.id">
       <div class="card text-white bg-dark mb-3" style="width: 20rem; height: 75rem; ">
-        <img src="@/assets/Cocktail2.png" class="card-img-top" alt="Cocktail logo missing">
+        <img :src="cocktailURL(cocktail)" class="card-img-top" alt="Cocktail logo missing">
         <div class="card-body">
           <h4 class="card-title">{{cocktail.name}}</h4>
           <p class="card-text">{{cocktail.rezept}}</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" :id="'button-id-' + cocktail.id" class="btn btn-primary" data-bs-toggle="modal" :data-bs-target="'#'+cocktail.name.replaceAll(' ','')">
               Zeig mir das Rezept
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" :id="cocktail.name.replaceAll(' ','')" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg " style="width: 2000px;">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -21,7 +21,7 @@
                     <div class="container">
                       <div class="row align-items-start">
                         <div class="col">
-                          <img src="@/assets/Caipirinha.jpeg" id="imagepreview" class="float-md-end mb-3 ms-md-3" alt="..." style="width: 200px; height: auto">
+                          <img :src="cocktailURL(cocktail)" id="imagepreview" class="float-md-end mb-3 ms-md-3" alt="..." style="width: 200px; height: auto">
                         </div>
                         <div class="col">
                           {{cocktail.rezept}}
@@ -59,7 +59,11 @@ export default {
   },
   methods: {
     cocktailZutatentoList (cocktail) {
+      console.log('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
       return cocktail.zutaten.split(', ').join(' \n')
+    },
+    cocktailURL (cocktail) {
+      return require('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
     }
   }
 }
