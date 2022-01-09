@@ -1,53 +1,43 @@
 <template>
-  <form class="row g-3">
-    <div class="col-md-4">
-      <label for="validationDefault01" class="form-label">First name</label>
-      <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-    </div>
-    <div class="col-md-4">
-      <label for="validationDefault02" class="form-label">Last name</label>
-      <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-    </div>
-    <div class="col-md-4">
-      <label for="validationDefaultUsername" class="form-label">Username</label>
-      <div class="input-group">
-        <span class="input-group-text" id="inputGroupPrepend2">@</span>
-        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="validationDefault03" class="form-label">City</label>
-      <input type="text" class="form-control" id="validationDefault03" required>
-    </div>
-    <div class="col-md-3">
-      <label for="validationDefault04" class="form-label">State</label>
-      <select class="form-select" id="validationDefault04" required>
-        <option selected disabled value="">Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="col-md-3">
-      <label for="validationDefault05" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="validationDefault05" required>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-        <label class="form-check-label" for="invalidCheck2">
-          Agree to terms and conditions
-        </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
+  <section>
+    <v-row no-gutters>
+      <v-col cols="12">
+        <SectionsHeroAlt :hero-alt="heroAlt" />
+        <v-container>
+          <v-row class="py-16">
+            <v-col cols="12">
+              <h2
+                class="text-h4 text-md-h3 text-center font-weight-black text-capitalize"
+              >
+                Hey, wir sind CocktailApp
+              </h2>
+              <br>
+              <h3
+                class="text-h4 text-uppercase font-weight-thin text-center my-8"
+              >
+                Zusammen machen wir Cocktails nicht nur Lecker sondern auch einfach
+              </h3>
+            </v-col>
+            <v-col cols="12" md="6">
+              <p>
+                Cocktails mixen, das macht Spaß. Es macht einfach gute Laune ein bisschen rum zu tüfteln, Zutaten miteinander zu vermischen und im kleinen Kreis einen gut aussehenden Cocktail herzustellen. Natürlich macht es dann noch viel bessere Laune diesen gemeinsam zu verköstigen.Und genau dieser Spaß soll eben bleiben. Cocktail mixen soll zu einer unkomplizierten Geschichte werden, bei der sich der Kunde ab jetzt ganz auf die gute Laune konzentrieren kann.
+              </p>
+              <blockquote class="text-h4 pa-5 my-4 font-weight-thin">
+                Wir glauben es gibt bereits viele Menschen, die sehr gerne einen Abend auf diese Weise ausschmücken würden, aber zur endgültigen Umsetzung kommt es dann doch sehr selten. Das liegt daran, dass man im Alltag dann gar keine Zeit findet, um erst einmal ein ordentliches Rezept zu suchen, alle Zutaten einzukaufen und das richtige Zubehör zu finden.
+              </blockquote>
+              <p>
+                Deswegen gibt es nun eine Internetseite, die einfach und unkompliziert aufgebaut ist, auf der ich mir meinen Lieblingscocktail aussuche und bequem ein großes Paket nach Hause geschickt bekomme. Hier ist alles enthalten, was ich benötigen könnte und mein Cocktailabend ist komplett vorbereitet.
+              </p>
+              <img src="@/assets/Cocktail7.jpeg" alt="..." style="width: 800px; height: auto">
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
+  </section>
 </template>
 
 <style>
-  .about {
-    background: transparent;
-  }
 </style>
 <script>
 </script>
