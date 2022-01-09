@@ -7,14 +7,11 @@
           <v-row class="py-16">
             <v-col cols="12">
               <h2 class="text-h4 text-md-h3 text-center font-weight-black text-capitalize">
-                Hey, wir sind CocktailApp
+                Hey, Wir Sind Cocktail-App
               </h2>
-              <br>
-              <h3
-                class="text-h4 text-uppercase font-weight-thin text-center my-8"
-              >
-                Zusammen machen wir Cocktails nicht nur Lecker sondern auch einfach
-              </h3>
+              <p>
+                Zusammen Machen Wir Cocktails Nicht Nur Lecker Sondern Auch Einfach
+              </p>
             </v-col>
             <v-col cols="12" md="6">
               <p>
@@ -26,7 +23,6 @@
               <p>
                 Deswegen gibt es nun eine Internetseite, die einfach und unkompliziert aufgebaut ist, auf der ich mir meinen Lieblingscocktail aussuche und bequem ein großes Paket nach Hause geschickt bekomme. Hier ist alles enthalten, was ich benötigen könnte und mein Cocktailabend ist komplett vorbereitet.
               </p>
-              <img src="@/assets/Cocktail7.jpeg" alt="..." style="width: 800px; height: auto">
             </v-col>
           </v-row>
         </v-container>
