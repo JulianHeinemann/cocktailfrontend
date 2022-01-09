@@ -6,9 +6,7 @@
         <v-container>
           <v-row class="py-16">
             <v-col cols="12">
-              <h2
-                class="text-h4 text-md-h3 text-center font-weight-black text-capitalize"
-              >
+              <h2 class="text-h4 text-md-h3 text-center font-weight-black text-capitalize">
                 Hey, wir sind CocktailApp
               </h2>
               <br>
