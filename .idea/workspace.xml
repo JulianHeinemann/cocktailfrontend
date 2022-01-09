@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Cocktailoverview overwork">
+    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Cocktailpictures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,8 @@
       <workItem from="1641658401791" duration="605000" />
       <workItem from="1641659059558" duration="375000" />
       <workItem from="1641685173988" duration="5595000" />
-      <workItem from="1641726544400" duration="7699000" />
+      <workItem from="1641726544400" duration="7793000" />
+      <workItem from="1641734917602" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="Cocktail-Frontend">
       <created>1641658847571</created>
@@ -126,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641734451758</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cocktailpictures">
+      <created>1641734842841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641734842841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +157,7 @@
     <MESSAGE value="Cocktail-Frontend Wieder da :D" />
     <MESSAGE value="CocktailRecipeModal hinzufügen" />
     <MESSAGE value="Cocktailoverview overwork" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cocktailoverview overwork" />
+    <MESSAGE value="Cocktailpictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cocktailpictures" />
   </component>
 </project>

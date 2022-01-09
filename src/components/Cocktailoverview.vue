@@ -21,7 +21,7 @@
                     <div class="container">
                       <div class="row align-items-start">
                         <div class="col">
-                          <img src="@/assets/Cocktail8.png" id="imagepreview" class="float-md-end mb-3 ms-md-3" alt="..." style="width: 200px; height: auto">
+                          <img src="@/assets/Caipirinha.jpeg" id="imagepreview" class="float-md-end mb-3 ms-md-3" alt="..." style="width: 200px; height: auto">
                         </div>
                         <div class="col">
                           {{cocktail.rezept}}
