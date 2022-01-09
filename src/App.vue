@@ -2,6 +2,9 @@
   <Navbar>
   </Navbar>
   <router-view/>
+  <div class="background-app">
+
+  </div>
 </template>
 
 <script>
@@ -14,7 +17,11 @@ export default {
 </script>
 
 <style>
-html {
+html{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: url("./assets/Cocktail7.jpeg");
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

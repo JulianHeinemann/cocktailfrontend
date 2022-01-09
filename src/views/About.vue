@@ -29,9 +29,16 @@
       </v-col>
     </v-row>
   </section>
+  <body>
+  <img src="../assets/Cocktailabout.jpg">
+  </body>
 </template>
 
-<style>
+<style scoped>
+img{
+  margin-bottom: 0px;
+  scale: 1000%;
+}
 </style>
 <script>
 </script>

@@ -21,18 +21,6 @@ export default {
       search: ''
     }
   },
-  methods: {
-    getCocktailPic (cocktail) {
-      switch (cocktail.id) {
-        case (1):
-          return require('../assets/gintonic.png')
-        case (2):
-          return require('../assets/Cocktail2.png')
-        default:
-          return require('../assets/Cocktail1.png')
-      }
-    }
-  },
   mounted () {
     const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + 'cocktails'
     const requestOptions = {
