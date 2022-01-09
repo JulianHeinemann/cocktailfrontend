@@ -15,14 +15,12 @@ export default {
 
 <style>
 html {
-  background: beige;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: beige;
 }
 
 #nav {

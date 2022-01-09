@@ -1,4 +1,5 @@
 <template>
+  <cocktail></cocktail>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -9,8 +10,7 @@
       <div class="carousel-item active">
         <img src="../assets/GinTonic.png" class="d-block w-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <p>Hier steht etwas</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -23,7 +23,7 @@
       <div class="carousel-item">
         <img src="../assets/GinTonic.png" class="d-block w-50" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
+          <h5>hier auch</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
@@ -41,7 +41,38 @@
 
 <script>
 export default {
-  name: 'CocktailCarousel'
+  name: 'Cocktail',
+  data () {
+    return {
+      cocktails: []
+    }
+  },
+  methods: {
+    getCocktailPic (cocktail) {
+      switch (cocktail.id) {
+        case (1):
+          return require('../assets/GinTonic.png')
+        case (2):
+          return require('../assets/Cocktail2.png')
+        default:
+          return require('../assets/Cocktail1.png')
+      }
+    }
+  },
+  mounted () {
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + 'cocktails'
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    }
+
+    fetch(endpoint, requestOptions)
+      .then(response => response.json())
+      .then(result => result.forEach(cocktail => {
+        this.cocktails.push(cocktail)
+      }))
+      .catch(error => console.log('error', error))
+  }
 }
 </script>
 

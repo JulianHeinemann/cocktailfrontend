@@ -1,29 +1,27 @@
 <template>
-  <div class="background">
+  <div class="background" >
     <div class="home">
-      <CocktailCarousel></CocktailCarousel>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CocktailCarousel from '@/components/CocktailCarousel'
 export default {
 
   name: 'Home',
   components: {
-    CocktailCarousel
   }
 }
 </script>
 
 <style>
-  .background{
-    background-size: auto;
-    background-color: beige;
-    -o-background-size: 1000px;
-  }
+html{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-image: url("../assets/Cocktail7.jpeg");
+}
   cocktail-carousel{
     width: max-content;
   }
