@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Krankes Modal eingebaut- echt krass">
+    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Working on validation-not working for now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cocktailcreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailcreate.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/About.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1641685173988" duration="5595000" />
       <workItem from="1641726544400" duration="7793000" />
       <workItem from="1641734917602" duration="6935000" />
-      <workItem from="1641742614774" duration="13758000" />
+      <workItem from="1641742614774" duration="18920000" />
     </task>
     <task id="LOCAL-00001" summary="Cocktail-Frontend">
       <created>1641658847571</created>
@@ -164,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641753263859</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Working on validation-not working for now">
+      <created>1641759029697</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641759029697</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +194,7 @@
     <MESSAGE value="Cocktailpictures" />
     <MESSAGE value="Rest der Bilder" />
     <MESSAGE value="Krankes Modal eingebaut- echt krass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Krankes Modal eingebaut- echt krass" />
+    <MESSAGE value="Working on validation-not working for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on validation-not working for now" />
   </component>
 </project>

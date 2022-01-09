@@ -4,7 +4,7 @@
       <div class="card text-white bg-dark mb-3" style="width: 20rem; height: 75rem; ">
         <img :src="cocktailURL(cocktail)" class="card-img-top" alt="Cocktail logo missing">
         <div class="card-body">
-          <h4 class="card-title">{{cocktail.name}}</h4>
+          <h4 class="card-title">{{cocktail.name}}  <span class="badge bg-secondary">{{cocktail.tags}}</span></h4>
           <p class="card-text">{{cocktail.rezept}}</p>
             <button type="button" :id="'button-id-' + cocktail.id" class="btn btn-primary" data-bs-toggle="modal" :data-bs-target="'#'+cocktail.name.replaceAll(' ','')">
               Zeig mir das Rezept
@@ -27,7 +27,7 @@
                           {{cocktail.rezept}}
                         </div>
                         <div class="col">
-                            {{ cocktailZutatentoList(cocktail) }}
+                            {{cocktail.zutaten}}
                           </div>
                         </div>
                       </div>
@@ -57,12 +57,13 @@ export default {
     }
   },
   methods: {
-    cocktailZutatentoList (cocktail) {
-      console.log('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
-      return cocktail.zutaten.split(', ').join(' \n')
-    },
     cocktailURL (cocktail) {
-      return require('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
+      // bis id 28 selbst Bilder eingefügt
+      if (cocktail.id <= 28) {
+        return require('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
+      } else {
+        return require('../assets/Cocktail2.png')
+      }
     }
   }
 }
@@ -76,7 +77,6 @@ export default {
 }
 .modal{
   color: black;
-  background: beige;
 }
 .card-group {
   margin: auto;
