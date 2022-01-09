@@ -8,21 +8,29 @@
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <form>
+      <form class="text-start needs-validation" novalidate>
         <div class="mb-3">
           <label for="cocktailname" class="form-label">Cocktailname</label>
-          <input type="text" v-model="cocktailname" class="form-control" id="cocktailname" aria-describedby="CocktailnameHelp">
-          <div id="CocktailnameHelp" class="form-text">Denk dir einen coolen Namen für den Cocktail aus</div>
+          <input type="text" v-model="cocktailname" class="form-control" id="cocktailname" required >
+          <div id="validationServercocktailnameFeedback" class="invalid-feedback">
+            Bitte gib dem Cocktail einen Namen
+          </div>
         </div>
         <div class="mb-3">
           <label for="cocktailrezept" class="form-label">Cocktailrezept</label>
-          <input type="text" v-model="rezept" class="form-control" id="cocktailrezept" aria-describedby="CocktailRezeptHelp">
+          <input type="text" v-model="rezept" class="form-control" id="cocktailrezept" aria-describedby="CocktailRezeptHelp" required >
+          <div id="validationServerRecipeFeedback" class="invalid-feedback">
+            Bitte schreibe ein Rezept für den Cocktail.
+          </div>
           <div id="CocktailRezeptHelp" class="form-text">Beschreibe die Zubereitung des Cocktails, was kommt wann?</div>
         </div>
         <div class="mb-3">
           <label for="cocktailzutaten" class="form-label">Cocktail-Zutaten-Liste</label>
-          <input type="text" v-model="zutaten" class="form-control" id="cocktailzutaten" aria-describedby="CocktailZutatenHelp">
+          <input type="text" v-model="zutaten" class="form-control" id="cocktailzutaten" aria-describedby="CocktailZutatenHelp" required >
           <div id="CocktailZutatenHelp" class="form-text">In der Form (4 cl Vodka, 2 cl Grenadine) schreiben</div>
+          <div id="validationServerIngredients" class="invalid-feedback">
+            Dein Cocktail braucht noch Zutaten!!
+          </div>
         </div>
         <div class="mb-3">
           <label for="tags" class="form-label">Wähle Tags für deinen Cocktail</label>
@@ -50,35 +58,56 @@ export default {
   name: 'Cocktailcreate',
   data () {
     return {
-      cocktailname: '',
-      rezept: '',
-      zutaten: '',
-      tags: ''
+      cocktailname: ' ',
+      rezept: ' ',
+      zutaten: ' ',
+      tags: ' '
     }
   },
   methods: {
     createCocktail () {
-      const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + 'cocktails'
+      const valid = this.validate()
+      if (valid) {
+        const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + 'cocktails'
 
-      const headers = new Headers()
-      headers.append('Content-Type', 'application/json')
+        const headers = new Headers()
+        headers.append('Content-Type', 'application/json')
 
-      const payload = JSON.stringify({
-        name: this.cocktailname,
-        rezept: this.rezept,
-        zutaten: this.zutaten,
-        tags: this.tags
-      })
+        const payload = JSON.stringify({
+          name: this.cocktailname,
+          rezept: this.rezept,
+          zutaten: this.zutaten,
+          tags: this.tags
+        })
 
-      const requestOptions = {
-        method: 'POST',
-        headers: headers,
-        body: payload,
-        redirect: 'follow'
+        const requestOptions = {
+          method: 'POST',
+          headers: headers,
+          body: payload,
+          redirect: 'follow'
+        }
+
+        fetch(endpoint, requestOptions)
+          .catch(error => console.log('error', error))
       }
+    },
+    validate () {
+      let valid = true
+      const forms = document.querySelectorAll('.needs-validation')
 
-      fetch(endpoint, requestOptions)
-        .catch(error => console.log('error', error))
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              valid = false
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+      return valid
     }
   }
 }
