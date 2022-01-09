@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Cocktail-Frontend">
-      <change afterPath="$PROJECT_DIR$/.idea/cocktailfrontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/about.896f94e4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/about.896f94e4.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.0adb0c0e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/app.0adb0c0e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.1e0fc5df.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/chunk-vendors.1e0fc5df.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CocktailCarousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CocktailCarousel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cocktailcreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailcreate.vue" afterDir="false" />
+    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="CocktailRecipeModal hinzufügen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Recipe.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recipe.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Cocktail.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +83,7 @@
       <workItem from="1641658401791" duration="605000" />
       <workItem from="1641659059558" duration="375000" />
       <workItem from="1641685173988" duration="5595000" />
-      <workItem from="1641726544400" duration="2604000" />
+      <workItem from="1641726544400" duration="7031000" />
     </task>
     <task id="LOCAL-00001" summary="Cocktail-Frontend">
       <created>1641658847571</created>
@@ -133,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641685289537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CocktailRecipeModal hinzufügen">
+      <created>1641729301084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641729301084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cocktail-Frontend" />
     <MESSAGE value="Cocktail-Frontend Wieder da :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cocktail-Frontend Wieder da :D" />
+    <MESSAGE value="CocktailRecipeModal hinzufügen" />
+    <option name="LAST_COMMIT_MESSAGE" value="CocktailRecipeModal hinzufügen" />
   </component>
 </project>

@@ -11,7 +11,7 @@
             </button>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog modal-lg " style="width: 2000px;">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">{{ cocktail.name }}</h5>
@@ -21,13 +21,18 @@
                     <div class="container">
                       <div class="row align-items-start">
                         <div class="col">
+                          <img src="@/assets/Cocktail8.png" id="imagepreview" class="float-md-end mb-3 ms-md-3" alt="..." style="width: 200px; height: auto">
+                        </div>
+                        <div class="col">
                           {{cocktail.rezept}}
                         </div>
                         <div class="col">
-                          <img src="src/assets/images.jpeg" id="imagepreview" style="width: 400px; height: 264px;">
+                            {{ cocktailZutatentoList(cocktail) }}
+                          </div>
                         </div>
                       </div>
                   </div>
+                    </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
@@ -37,9 +42,7 @@
             </div>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
+      </div>
 </template>
 
 <script>
@@ -55,13 +58,18 @@ export default {
     }
   },
   methods: {
+    cocktailZutatentoList (cocktail) {
+      return cocktail.zutaten.split(', ').join(' \n')
+    }
   }
 }
 </script>
 
 <style scoped>
 .modal-dialog{
-  width: 1250px;
+  width: 2000px;
+  margin: auto;
+  margin-top: 100px;
 }
 .modal{
   color: black;
