@@ -40,7 +40,7 @@ export default {
     fetch(endpoint, requestOptions)
       .then(response => response.json())
       .then(result => result.forEach(cocktail => {
-        if (cocktail.id <= 28) {
+        if (cocktail.id <= 91) {
           this.cocktails.push(cocktail)
         }
       }))

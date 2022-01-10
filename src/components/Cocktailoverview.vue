@@ -1,6 +1,6 @@
 <template>
   <div class="card-group">
-    <div class="col" v-for="cocktail in cocktails" :key= "cocktail.id">
+    <div class="col" v-for="cocktail in cocktails" :key="cocktail.id">
       <div class="card text-white bg-dark mb-3" style="width: 20rem; height: 75rem; ">
         <img :src="cocktailURL(cocktail)" class="card-img-top" alt="Cocktail logo missing">
         <div class="card-body">
@@ -58,8 +58,9 @@ export default {
   },
   methods: {
     cocktailURL (cocktail) {
+      console.log(cocktail.name)
       // bis id 28 selbst Bilder eingefügt
-      if (cocktail.id <= 28) {
+      if (cocktail.id <= 91) {
         return require('../assets/' + cocktail.name.toLowerCase().replaceAll(' ', '') + '.jpeg')
       } else {
         return require('../assets/Cocktail2.png')

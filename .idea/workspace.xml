@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Serverseitige Validation steht, Modal ist noch wilder als vorher">
+    <list default="true" id="6396c7f0-0cc5-4ee6-bb40-238f7afa663c" name="Changes" comment="Jetzt sind auch die Seiten lit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cocktailoverview.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Cocktails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Cocktails.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
     </list>
@@ -92,7 +91,7 @@
       <workItem from="1641685173988" duration="5595000" />
       <workItem from="1641726544400" duration="7793000" />
       <workItem from="1641734917602" duration="6935000" />
-      <workItem from="1641742614774" duration="22621000" />
+      <workItem from="1641742614774" duration="26319000" />
     </task>
     <task id="LOCAL-00001" summary="Cocktail-Frontend">
       <created>1641658847571</created>
@@ -178,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641765630554</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Jetzt sind auch die Seiten lit">
+      <created>1641769134017</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641769134017</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +211,7 @@
     <MESSAGE value="Krankes Modal eingebaut- echt krass" />
     <MESSAGE value="Working on validation-not working for now" />
     <MESSAGE value="Serverseitige Validation steht, Modal ist noch wilder als vorher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Serverseitige Validation steht, Modal ist noch wilder als vorher" />
+    <MESSAGE value="Jetzt sind auch die Seiten lit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jetzt sind auch die Seiten lit" />
   </component>
 </project>

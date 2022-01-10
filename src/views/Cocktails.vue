@@ -1,4 +1,5 @@
 <template>
+  <h3>Suchst du was bestimmtes?</h3>
   <input class="searchbar" type="text" placeholder="Search" v-model="search">
   <br>
   <br>
@@ -31,6 +32,7 @@ export default {
     fetch(endpoint, requestOptions)
       .then(response => response.json())
       .then(result => result.forEach(cocktail => {
+        console.log(cocktail.name)
         this.cocktails.push(cocktail)
       }))
       .catch(error => console.log('error', error))
@@ -38,8 +40,7 @@ export default {
   computed: {
     filteredCocktails () {
       return this.cocktails.filter(cocktail =>
-        cocktail.name.toLowerCase().includes(this.search.toLowerCase())
-      )
+        cocktail.name.toLowerCase().includes(this.search.toLowerCase()))
     }
   }
 }
